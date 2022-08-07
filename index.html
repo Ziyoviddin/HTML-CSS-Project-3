@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Documantation-page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</html>
+<body>
+ 
+<nav id="navbar">
+  <!-- https://www.techmezine.com/wp-content/uploads/2019/04/MathWorks-Logo.png -->
+  <header class="category"><h2>Category</h2></header>
+  <div class="border_category"></div>
+  <ul>
+    <li><a class="nav-link" href="#Get_started_with_MATLAB">Get started with MATLAB</a></li>
+    <li><a class="nav-link" href="#Language_Fundamentals">Language Fundamentals</a></li>
+    <li><a class="nav-link" href="#Data_analysis">Data analysis</a></li>
+    <li><a class="nav-link" href="#Mathematics">Mathematics</a></li>
+    <li><a class="nav-link" href="#Graphics">Graphics</a></li>
+    <li><a class="nav-link" href="#Programming">Programming</a></li>
+    <li><a class="nav-link" href="#App_Building">App Building</a></li>
+    <li><a class="nav-link" href="#Software_development_tools">Software development tools</a></li>
+    <li><a class="nav-link" href="#External_language_interface">External language interface</a></li>
+    
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Get_started_with_MATLAB">
+    <header>Get started with MATLAB</header>
+    <article>
+      <p>Millions of engineers and scientists worldwide use MATLAB® to analyze and design the systems and products transforming our world. The matrix-based MATLAB language is the world’s most natural way to express computational mathematics. Built-in graphics make it easy to visualize and gain insights from data. The desktop environment invites experimentation, exploration, and discovery. These MATLAB tools and capabilities are all rigorously tested and designed to work together.</p>
+      <p>MATLAB helps you take your ideas beyond the desktop. You can run your analyses on larger data sets, and scale up to clusters and clouds. MATLAB code can be integrated with other languages, enabling you to deploy algorithms and applications within web, enterprise, and production systems.</p>
+      </article>  
+  </section>
+  <section class="main-section" id="Language_Fundamentals">
+    <header>Language Fundamentals</header>
+    <article>
+      <p>MATLAB is an abbreviation for "matrix laboratory." While other programming languages usually work with numbers one at a time, MATLAB® operates on whole matrices and arrays. Language fundamentals include basic operations, such as creating variables, array indexing, arithmetic, and data types.</p>
+      <p>To create a string array, you can concatenate string scalars using square brackets, just as you can concatenate numbers into a numeric array.</p>
+ <fieldset><code> str = ["Mercury" "Gemini" "Apollo";
+       "Skylab" "Skylab B" "ISS"]<code> </fieldset>    
+      </article>  
+  </section>
+  <section class="main-section" id="Data_analysis">
+    <header>Data analysis</header>
+    <article>
+      <p>Access data from text files, spreadsheets, hardware, other software, or the web. Explore the data to identify trends, test hypotheses, and estimate uncertainty. Create customized algorithms, visualizations, and models.</p>
+      <p>You can create an HTMLImportOptions object using either the htmlImportOptions function (described here) or the detectImportOptions function:</p>
+      <ul>
+        <li>Use htmlImportOptions to define the import properties based on your import requirements.</li>
+        <li>Use detectImportOptions to detect and populate the import properties based on the contents of the HTML file specified in filename.</li>
+      </ul>
+      <fieldset>
+        <code>opts = detectImportOptions(filename)</code>
+      </fieldset>
+      <p class="colorly-p">Syntax</p>
+      <fieldset>
+        <code>opts = htmlImportOptions
+opts = htmlImportOptions('NumVariables',numVars)
+opts = htmlImportOptions(___,Name,Value)</code>
+      </fieldset>
+      </article>  
+  </section>
+  <section class="main-section" id="Mathematics">
+    <header>Mathematics</header>
+    <article>
+      <p>Math functions provide a range of numerical computation methods for analyzing data, developing algorithms, and creating models. Core functions use processor-optimized libraries for fast vector and matrix calculations.</p>
+
+      <figure id="math-catagory">
+        <header id="math-head"><span class="math-head">Catagory</span></header>
+        <ul>
+          <li class="math-catagory">
+            <h3>Elementry Math</h3>
+            <p>Trigonometry, exponentials and logarithms, complex values, rounding, remainders, discrete math</p>
+          </li>  
+          <li class="math-catagory">
+            <h3>Optimization</h3>
+            <p>Minimum of single and multivariable functions, nonnegative least-squares, roots of nonlinear functions</p>
+          </li>  
+          <li class="math-catagory"> 
+            <h3>Numerical Integration and Differential Equations</h3>
+            <p>Numerical integration, ordinary differential equations, delay differential equations, boundary value problems, partial differential equations</p>
+          </li>  
+          <li class="math-catagory">
+            <h3>Fourier Analysis and Filtering</h3>
+            <p>Fourier transforms, convolution, digital filtering</p>
+          </li>  
+          <li class="math-catagory">
+            <h3>Sparse Matrices</h3>
+            <p>Elementary sparse matrices, reordering algorithms, iterative methods, sparse linear algebra</p>
+          </li>  
+          <li class="math-catagory">
+            <h3>Computational Geometry</h3>
+            <p>Triangulation, bounding regions, Voronoi diagrams, polygons</p>
+          </li>  
+        </ul>  
+      </figure>  
+    </article>  
+  </section>
+  <section class="main-section" id="Graphics">
+    <header>Graphics</header>
+    <article>
+      <p>Graphics functions include 2-D and 3-D plotting functions to visualize data and communicate results. Customize plots either interactively or programmatically.</p> 
+      <h3 class="h3-color">
+       2-D and 3-D Plots
+      </h3> 
+      <img src="https://www.mathworks.com/help/matlab/doccenter_commongraphicsfunctions.png" >
+    </article>  
+  </section>
+  <section class="main-section" id="Programming">
+    <header>Programming</header>
+    <article>
+     <p>When you have a sequence of commands to perform repeatedly or that you want to save for future reference, store them in a program file. The simplest type of MATLAB® program is a script, which contains a set of commands exactly as you would type them at the command line. For additional programming flexibility, create functions which accept input and return outputs. When you have specialized data structures or require many functions to interact with special kinds of data, create classes using object-oriented programming techniques.</p> 
+     <p class="colorly-p">Scripts</p> 
+     <p>Scripts are the simplest type of program file. They are useful for automating a series of MATLAB® commands, such as computations that you have to perform repeatedly from the command line or series of commands you have to reference.</p>
+     <fieldset>
+       <code>path = export(file)
+path = export(file,outputfile)
+path = export(___,Name=Value)<code>
+     </fieldset>
+     <p>Specify optional pairs of arguments as Name1=Value1,...,NameN=ValueN, where Name is the argument name and Value is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.</p>
+     <fieldset>
+       <code> path = export("myfiles/mylivescript.mlx",Format="docx")<code>
+     </fieldset>
+     <p>Write MATLAB code to a file in the folder.</p>
+     <fieldset>
+       <code>newFile = fullfile(tmp,'ANewFile.m');
+fid = fopen(newFile,'w');
+fprintf(fid,'Z = magic(5);\n');
+fprintf(fid,'b = bar3(Z);\n'); 
+fclose(fid);</code>
+     </fieldset>
+     <p>Run the script.
+</p>
+<fieldset>
+  <code>run(newFile)<code>
+</fieldset>
+<img src="https://www.mathworks.com/help/examples/matlab/win64/RunScriptNotOnCurrentPathExample_01.png" alt="Matlab Run Script">
+    </article>  
+  </section>
+  <section class="main-section" id="App_Building">
+    <header>App Building</header>
+    <article>
+      <p>MATLAB® provides functions and tools to build interactive user interfaces. You can add components, such as buttons and sliders, to enable user interaction and include plots for data visualization and exploration in these interfaces.</p>  
+      <p>To create self-contained interfaces that perform operations based on user interactions, develop apps. To create interfaces that can be embedded into a live script and that generate code as users explore parameters, develop Live Editor tasks. For more information, see Ways to Build Apps.</p>  
+      <p>A large set of UI components are available for creating interfaces in MATLAB. You also can extend the list of available components with your own specialized UIs and visualizations by creating custom UI components.</p>  
+      <img src="https://www.mathworks.com/help/matlab/appbuilding_uicomponents_snapshot.png" alt="Matlab Appbuilding Sets-up">
+    </article>  
+  </section>
+  <section class="main-section" id="Software_development_tools">
+    <header>Software development tools</header>
+    <article>
+      <p>As the size and complexity of your projects grow, MATLAB® provides capabilities to support collaborative software development practices. For instance, you can integrate your MATLAB files with Git™ or Subversion® source control systems or test the functionality and performance of your code. To share code with others, package projects or other files as a toolbox.</p>
+      </article>  
+  </section>
+  <section class="main-section"id="External_language_interface">
+    <header>External language interface</header>
+    <article>
+      <p>MATLAB® provides a flexible, two-way integration with other programming languages, allowing you to reuse legacy code. To help you choose a MATLAB feature for your application, see Integrate MATLAB with External Programming Languages and Systems.</p> 
+     <figure>
+       <header class="colorly-p">External Language Options </header>
+       <h3>C++ with MATLAB</h3>
+       <p>Directly call C/C++ library functionality from MATLAB or write modern C++ programs that call MATLAB functions</p>
+       <h3>Java with MATLAB</h3>
+       <p>Directly call Java® library functionality from MATLAB or write Java programs that work with MATLAB</p>
+       <h3>Python with MATLAB</h3>
+       <p>Directly call Python® library functionality from MATLAB or write Python programs that work with MATLAB</p>
+       <h3>.NET with MATLAB</h3>
+       <p>Directly call .NET library functionality from MATLAB or write .NET programs that work with MATLAB</p>
+       <h3>Web Services with MATLAB</h3>
+       <p>Communicate with Web services from MATLAB using HTTP (Hypertext Transfer Protocol) or WSDL (Web Services Description Language)</p>
+     </figure>
+<p>As the size and complexity of your projects grow, MATLAB® provides capabilities to support collaborative software development practices. For instance, you can integrate your MATLAB files with Git™ or Subversion® source control systems or test the functionality and performance of your code. To share code with others, package projects or other files as a toolbox.</p>
+<p>Not all Projects functionalities are available in MATLAB® Online™.</p>
+    </article>  
+  </section>
+ 
+</main>
+ <footer>
+    <div id="bottom-space"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/534px-Matlab_Logo.png" rel="MATLAB Logo" class="Matlab-logo"><span class="Matlab-copywrite">All Copywrites Reserve by MathWorks.</span></div>
+ </footer>
+
+</body>
